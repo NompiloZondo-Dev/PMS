@@ -1,0 +1,96 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:#2C3639;
+   
+  } */
+
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #2C3639;
+  /* min-height: 65vh; 
+    max-height: max-content; */
+  padding: 0 5rem;
+  /* padding-top: 10rem; */
+  padding-bottom: 5rem;
+  gap: 5rem;
+
+}
+
+
+
+.hero__content {
+  flex: 1;
+  align-self: center;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  top: 3.5rem;
+}
+
+.hero__message {
+  color: var(--color-backdrop);
+  width: 70%;
+
+}
+
+
+
+.image-holder {
+  flex: 1;
+  position: relative;
+  bottom: -8rem;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__buttons {
+  width: 70%;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.hero__buttons button {
+  margin-right: 20px;
+  border-radius: 2px;
+}
+
+
+
+.hero__buttons button {
+  width: 118px;
+  height: 48px;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.primary-btn-login {
+  background-color: #D2E1CC;
+  border: none;
+  z-index: 5;
+}
+
+.primary-btn-login:hover {
+  background-color:  #d2e1ccbb;
+  /* color: white; */
+  transition: ease-in-out .2s;
+}
+
+.primary-btn {
+  background-color: var(--color-primary) !important;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: var(--color-primary-opaque) !important;
+  transition: ease-in-out .2s;
+}

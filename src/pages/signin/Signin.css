@@ -1,0 +1,115 @@
+.form__container {
+  display: flex;
+  position: relative;
+  /* height: 100vh; */
+}
+
+.signin-form__signin {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+
+}
+
+/* .signin-form__signin form {
+  width: fit-content;
+} */
+
+.background-image-right {
+  flex: 1;
+  background-image: url("/src/assets/handymanSignin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.form__container h2 {
+  /* margin-right: 23rem;
+  margin-bottom: 1rem; */
+  margin: 0 auto;
+}
+
+#form2 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: auto 0; */
+
+  padding: 0 1rem;
+  width: fit-content;
+  /* width: 100%; */
+}
+
+
+.signin-form__signin input {
+  border: 1px solid var(--color-primary);
+  padding: 12px;
+  margin-bottom: 29px;
+  width: 30rem;
+  border-radius: 5px;
+
+
+}
+
+/* .signin-form__signin input:focus {
+  outline: thin;
+  outline-color: var(--color-primary);
+  caret-color: var(--color-primary);
+} */
+
+
+.image-div {
+  height: fit-content;
+  width: fit-content;
+}
+
+
+#signin-button {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 9rem;
+  transition: ease-in-out 500ms;
+}
+
+#signin-button:hover {
+  box-shadow: 10px 10px 5px 0px rgba(17, 66, 61, 0.2);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(17, 66, 61, 0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(17, 66, 61, 0.2);
+}
+
+.green-colour-disabled-purple {
+  color: #8d855e;
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input {
+  width: 100%;
+  padding-right: 30px; /* Add some padding to the right to make space for the icon */
+}
+
+.password-icon {
+  position: absolute;
+  right: 25px; /* Adjust as needed */
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.Signin_labelname {
+  display: inline-flex;
+  gap: .5rem;
+}

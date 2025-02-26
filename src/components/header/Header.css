@@ -1,0 +1,70 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    top: 0;
+    padding: 0.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.header__logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.header__customer-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.header__user-details {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    /* Added to position the dropdown menu correctly */
+    /* cursor: pointer; */
+    padding: .2rem;
+}
+
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    border-radius: 8px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; 
+}
+
+.dropdown-menu.show {
+    max-height: 200px; /* Adjust according to content height */
+    opacity: 1;
+}
+
+.dropdown-menu button {
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.dropdown-menu button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-backdrop);
+    /* border-radius: 8px; */
+     
+}

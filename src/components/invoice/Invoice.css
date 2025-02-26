@@ -1,0 +1,83 @@
+.invoice__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.invoice__heading {
+  width: 80%;
+}
+
+.info {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date {
+  width: 60%;
+  display: flex;
+  font-weight: var(--fw-bold);
+  gap: 2rem;
+
+}
+
+.date p {
+  font-weight: normal;
+}
+
+
+.address,
+.address-2 {
+  /* font-size: 20px;
+  color: #000000; */
+}
+
+.address-2 {
+
+}
+
+.invoice-table {
+  border-collapse: collapse;
+  width: 60%;
+
+}
+
+.th,
+.td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.th {
+  background-color: #f2f2f2;
+}
+
+.total-row {
+  font-weight: bold;
+}
+
+.heading {
+  background-color: var(--color-backdrop);
+  padding: 1rem;
+}
+
+.tbody tr {
+  width: inherit;
+}
+
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.invoice__tb-cell{
+ 
+}
+
+.last-part {
+  width: 60%;
+}

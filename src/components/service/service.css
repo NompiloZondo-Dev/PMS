@@ -1,0 +1,95 @@
+.services-container {
+    display: flex;
+    padding: 2rem;
+    background-color: #D9D9D9;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service-svg {
+    position: absolute;
+    height: 100vh;
+    width: 80vh;
+}
+
+.graphic-grid {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: -13.5rem;
+    left: -40rem;
+    z-index: 1;
+}
+
+.services-container .top-icons {
+    margin-left: var(--icon-margin);
+}
+
+.service-description {
+
+   position: relative;
+   right: -5rem;
+
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -5rem;
+}
+
+.top-icons,
+.bottom-icons {
+    display: flex;
+    font-size: 74px;
+
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Background color and size for the first icon in both top-icons and bottom-icons */
+.top-icons .service-item:first-child .icon-container,
+.bottom-icons .service-item:first-child .icon-container,
+.bottom-icons .service-item:nth-child(3) .icon-container {
+    background-color: #8B8B8B;
+    padding: calc((182px - 74px) / 2) calc((var(--icon-margin) - 74px) / 2);
+}
+
+/* Background color and size for the second icon in both top-icons and bottom-icons */
+.top-icons .service-item:nth-child(2) .icon-container,
+.bottom-icons .service-item:nth-child(2) .icon-container {
+    background-color: #C4C4C4;
+    padding: calc((182px - 74px) / 2) calc((var(--icon-margin) - 74px) / 2);
+}
+
+.service-description .second-header {
+    font-size: 28px;
+}
+
+.service-description p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.service-description h1 {
+
+    font-size: 48px;
+}
+
+
+.service-item {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1440px) {
+    .graphic-grid {
+        top: -10.5rem;
+        left: -40rem;
+       
+    }
+  }
